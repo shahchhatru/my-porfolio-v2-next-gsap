@@ -4,9 +4,9 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 
 const GuitarAnimation = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
     gsap.registerPlugin(useGSAP);
-    const [isMouseInside, setIsMouseInside] = useState(false);
+    const [isMouseInside, setIsMouseInside] = useState<boolean>(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     const containerRef=useRef<HTMLDivElement>(null);
@@ -56,12 +56,16 @@ const GuitarAnimation = () => {
                 d:`M 0 50 Q ${mousePosition.x} ${mousePosition.y}  2550 50`
 
             },
-            duration:4.5,
-            ease: "elastic.out(1,0.5)",})
+            duration:0.5,
+            ease: "power.out(1,0.5)",})
         }else{
             gsap.to("path",{
-                attr:{d: "M 0 150  Q 600 150  2550 150" }
-            })
+                attr:{d: "M 0 150  Q 600 150  2550 150" },
+                duration:2.5,
+ease: "elastic.out(1,0.5)"
+            }
+           
+          )
         }
       },[isMouseInside,mousePosition])
 
