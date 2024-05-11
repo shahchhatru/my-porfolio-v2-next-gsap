@@ -1,4 +1,4 @@
-import { GuitarStringContainer,HeroSection } from "@/components/custom";
+import { GuitarStringContainer,HeroSection, ProjectDashboardContainer } from "@/components/custom";
 
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <HeroSection />
       <GuitarStringContainer />
+      <ProjectDashboardContainer />
     </>
   );
 }
