@@ -70,7 +70,7 @@ ease: "elastic.out(1,0.5)"
       },[isMouseInside,mousePosition])
 
   return (
-    <div ref={containerRef} className='max-w-fit bg-blue-500 overflow-hidden p-0 m-0 border-8 border-red-300'>
+    <div ref={containerRef} className='max-w-fit overflow-hidden p-0 m-0 border-8 border-red-300'>
       <svg width={windowWidth-20} height='400' className='bg-red-500 overflow-hidden' xmlns="http://www.w3.org/2000/svg">
       <path d="M 0 100 Q 600 50  2550 50" stroke="black" fill="transparent"/>
 
