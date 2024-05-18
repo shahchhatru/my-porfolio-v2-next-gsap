@@ -14,7 +14,7 @@ const navlinks=[
 
 function Navbar() {
   return (
-    <div className="sticky top-50 w-full min-h-24 flex justify-between ">
+    <div className="sticky top-0 w-full min-h-24 flex justify-between ">
         {/* logo section */}
         <div className="logo w-32 flex justify-center items-center capitalize font-bold text-xl cursor-pointer">
             <Link href={"/"}>
