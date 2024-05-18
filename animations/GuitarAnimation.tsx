@@ -99,7 +99,7 @@ const GuitarAnimation = () => {
 
   return (
     <div ref={containerRef} className='max-w-fit min-h-[600px] overflow-hidden p-0 m-0 border-8 border-red-300 relative'>
-      <div ref={robofaceRef} id="roboface" className="absolute p-4" style={{width:"fit-content",height:"64px",textAlign:"center",display:"flex",justifyContent:"space-between",alignItems:"center",opacity:isMouseInside?1:0,zIndex:isMouseInside?10:-10,color:"#fff"}}>
+      <div ref={robofaceRef} id="roboface" className="absolute p-4 scale-150" style={{width:"fit-content",height:"64px",textAlign:"center",display:"flex",justifyContent:"space-between",alignItems:"center",opacity:isMouseInside?1:0,zIndex:isMouseInside?10:-10,color:"#fff"}}>
       <Icon icon="fluent-emoji:robot" width="32" height="32" />
       <TextShowAnimation isMouseInside={isMouseInside} className='text-black'/>
       </div>
