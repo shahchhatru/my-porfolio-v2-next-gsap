@@ -5,9 +5,9 @@ import TiledCheckbox from "../TiledCheckbox/TiledCheckbox"
 function ProjectDashboardContainer() {
   return (
     <div className="w-full p-1  flex flex-col justify-start">
-      <div className="w-full  text-light text-4xl flex justify-center items-center p-2"> Technologies I've used</div>
+      <div className="w-full  text-light text-4xl flex justify-center items-center p-2"> Technologies I&apos;ve used</div>
       <div className="flex w-full h-fit justify-center items-center">
-        <fieldset className="w-3/5 grid grid-cols-4 gap-12 h-[200px] mt-20 bg-white">
+        <fieldset className="w-full md:w-3/5 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-12 h-[200px] mt-20 bg-white">
         <TiledCheckbox icon={"devicon:react"} name="react" id="#react"/>
         <TiledCheckbox icon={"logos:nextjs"} name="nextjs" id="#nextjs"/>
         <TiledCheckbox icon={"logos:django"} name="django" id="#django"/>
@@ -20,6 +20,8 @@ function ProjectDashboardContainer() {
         <TiledCheckbox icon={"devicon:mongodb"} name="mongodb" id="#mongodb" />
         <TiledCheckbox icon={"devicon:redis"} name="redis" id="#redis" />
         <TiledCheckbox icon={"devicon:opencv"} name="opencv" id="#opencv" />
+        <TiledCheckbox icon={"devicon:nginx"} name="nginx" id="#nginx" /> 
+        <TiledCheckbox icon={"devicon:apachekafka"} name="kafka" id="#kafka" />
         </fieldset>
 
       </div>
