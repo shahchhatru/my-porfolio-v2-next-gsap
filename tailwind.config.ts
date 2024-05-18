@@ -7,6 +7,8 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    './animations/*.{ts,tsx}',
+    './animations/**/*.{ts,tsx}'
 	],
   prefix: "",
   theme: {
